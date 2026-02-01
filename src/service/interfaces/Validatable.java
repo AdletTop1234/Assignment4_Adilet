@@ -9,7 +9,7 @@ public interface Validatable {
         try {
             validate();
             return true;
-        } catch (Exception e) {
+        } catch (RuntimeException e) {
             return false;
         }
     }

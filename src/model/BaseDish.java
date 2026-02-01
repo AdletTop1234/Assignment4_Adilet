@@ -20,11 +20,9 @@ public abstract class BaseDish implements Validatable, CalorieCalculable {
         this.name = name;
     }
 
-    // abstract methods (обязательное требование)
     public abstract void validate();
     public abstract double calculateCalories();
 
-    // concrete method
     public void printSummary() {
         System.out.println(id + " - " + name);
     }
